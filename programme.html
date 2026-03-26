@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programme - France Indoor 2026</title>
+    
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Alpine -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <style>
+        .bg-ffrs-blue { background-color: #003d82; }
+        .text-ffrs-blue { color: #003d82; }
+
+        .shimmer-text {
+            background: linear-gradient(90deg,#fff 0%,#fff 40%,rgba(227,6,19,0.5) 50%,#fff 60%,#fff 100%);
+            background-size: 300% 100%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            animation: shimmer 6s linear infinite alternate;
+        }
+
+        @keyframes shimmer {
+            0% { background-position: 0% 0; }
+            100% { background-position: 100% 0; }
+        }
+    </style>
+</head>
+
+<body class="min-h-screen bg-white">
+
+<!-- HEADER -->
+<header class="bg-ffrs-blue text-white">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+
+        <img src="images/logo_ffrs_horizontal_blanc.png" 
+             class="h-12" alt="FFRS">
+
+        <div class="text-center">
+            <h1 class="font-bold shimmer-text text-lg md:text-2xl">
+                CHAMPIONNAT DE FRANCE INDOOR
+            </h1>
+            <p class="shimmer-text text-sm md:text-lg">ROLLER COURSE 2026</p>
+        </div>
+
+        <img src="images/logo-france-indoor.jpg" 
+             class="h-12 rounded-full bg-white p-1" alt="France Indoor">
+    </div>
+</header>
+
+<!-- NAV -->
+<nav class="bg-blue-900 text-white" x-data="{ open:false }">
+    <div class="container mx-auto px-4">
+
+        <div class="hidden md:flex justify-center gap-6 py-3">
+            <a href="#" class="hover:text-orange-300">Accueil</a>
+            <a href="#" class="text-orange-400 font-semibold">Programme</a>
+            <a href="#" class="hover:text-orange-300">Résultats</a>
+            <a href="#" class="hover:text-orange-300">Photos</a>
+        </div>
+
+        <div class="md:hidden flex justify-between py-2">
+            <span>Menu</span>
+            <button @click="open=!open">☰</button>
+        </div>
+
+        <div x-show="open" class="md:hidden pb-4 space-y-2">
+            <a href="#" class="block">Accueil</a>
+            <a href="#" class="block font-bold">Programme</a>
+            <a href="#" class="block">Résultats</a>
+            <a href="#" class="block">Photos</a>
+        </div>
+
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="bg-ffrs-blue text-white text-center py-10">
+    <h2 class="text-3xl font-black">Programme</h2>
+    <p class="mt-2">Horaires des courses - 21 & 22 février 2026</p>
+</section>
+
+<!-- CONTENU -->
+<main class="container mx-auto px-4 py-10">
+
+    <div class="max-w-xl mx-auto bg-white shadow-lg rounded-lg p-6 text-center">
+
+        <h3 class="font-bold text-lg mb-4">Programme Officiel</h3>
+
+        <a href="documents/programme-CDF.pdf" target="_blank">
+            <img src="images/programme.jpg"
+                 class="mx-auto rounded shadow hover:opacity-90 transition"
+                 alt="Programme">
+        </a>
+
+        <p class="text-sm text-gray-500 mt-3">Cliquez pour agrandir</p>
+
+        <a href="documents/programme-CDF.pdf"
+           class="inline-block mt-4 bg-ffrs-blue text-white px-4 py-2 rounded hover:bg-blue-700">
+            Télécharger le PDF
+        </a>
+
+    </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-gray-800 text-white text-center py-6 mt-10">
+    <p class="text-sm">© 2026 France Indoor</p>
+</footer>
+
+</body>
+</html>
