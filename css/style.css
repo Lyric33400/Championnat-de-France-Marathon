@@ -32,6 +32,7 @@
     animation: shimmer 6s linear infinite alternate;
 }
 
+
 @keyframes shimmer {
     0% {
         background-position: 0% 0;
