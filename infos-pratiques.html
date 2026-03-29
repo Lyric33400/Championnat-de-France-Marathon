@@ -11,7 +11,6 @@
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body class="min-h-screen bg-white">
-
     <!-- ======================= -->
     <!-- HEADER : Logos + Titre  -->
     <!-- ======================= -->
@@ -26,6 +25,10 @@
                              alt="Logo FFRS"
                              class="h-8 w-auto">
                     </a>
+                    
+                <div class="w-12 h-12 rounded-full border border-black overflow-hidden bg-white">
+                    <img src="images/logos/logo CdF marathon.png" alt="cdf marathon" class="w-full h-full object-cover">
+                </div>
                     <a href="https://www.instagram.com/roller_skating_launacais/">
                         <div class="w-12 h-12 rounded-full border border-black overflow-hidden bg-white">
                             <img src="images/logos/rsl.png"
@@ -40,7 +43,7 @@
                         CHAMPIONNAT DE FRANCE MARATHON
                     </span>
                     <span class="block font-bold shimmer-text text-xs leading-tight">
-                        ROLLER COURSE 2026
+                        PATINAGE DE VITESSE 2026
                     </span>
                 </a>
             </div>
@@ -53,6 +56,10 @@
                          alt="Logo FFRS"
                          class="h-16 lg:h-20 w-auto">
                 </a>
+                
+                <div class="w-20 h-20 lg:w-28 lg:h-28 rounded-lg border border-black overflow-hidden bg-white">
+                    <img src="images/logos/logo CdF marathon.png" alt="cdf marathon" class="w-full h-full object-cover">
+                </div>
 
                 <a href="index.html" class="flex-1 text-center no-underline">
                     <span class="block font-bold shimmer-text text-lg lg:text-2xl leading-tight">
@@ -136,7 +143,7 @@
                 <a href="parcours.html" class="block py-2 px-4 rounded hover:bg-blue-800 transition">
                     Parcours
                 </a>
-                <a href="resultats.html" class="text-white hover:text-orange-300 transition font-medium">
+                <a href="resultats.html" class="block py-2 px-4 rounded hover:bg-blue-800 transition">
                     Résultats
                 </a>
                 <a href="infos-pratiques.html" class="block py-2 px-4 rounded hover:bg-blue-800 transition">
@@ -154,9 +161,9 @@
     <main>
 
         <!-- Page Header -->
-        <section class="bg-gradient-to-r from-blue-600 to-blue-800 text-white pt-8 md:pt-16 pb-6 md:pb-12 text-center">
+        <section class="bg-ffrs-blue text-white py-8 md:py-12 text-center">
             <div class="container mx-auto px-4">
-                <h1 class="text-3xl md:text-5xl lg:text-6xl font-black uppercase tracking-tight">
+                <h1 class="text-2xl md:text-4xl lg:text-5xl font-black uppercase">
                     Infos Pratiques
                 </h1>
             </div>
@@ -267,6 +274,10 @@
                             </p>
                             <p class="flex items-start gap-2 text-sm md:text-base">
                                 <span class="text-green-500 font-bold">✓</span>
+                                <span><strong>Attention aux déviations</strong> en arrivant sur Launac</span>
+                            </p>
+                            <p class="flex items-start gap-2 text-sm md:text-base">
+                                <span class="text-green-500 font-bold">✓</span>
                                 <span><strong>Parking gratuit</strong> sur place</span>
                             </p>
                             <p class="flex items-start gap-2 text-sm md:text-base">                                                            
@@ -288,20 +299,12 @@
                         <div class="space-y-3">
                             <p class="flex items-start gap-2 text-sm md:text-base">
                                 <span class="text-green-500 font-bold">✓</span>
-                                <span><strong>RER C</strong> : Station "Saint-Michel-sur-Orge"</span>
+                                <span><strong>SNCF</strong> : Gare de Castelnau-d'Estrétefonds</span>
                             </p>
                             <p class="flex items-start gap-2 text-sm md:text-base">
                                 <span>📍</span>
-                                <span><strong>2 km de la gare</strong> (30 min à pied)</span>
-                            </p>
-                            <p class="flex items-start gap-2 text-sm md:text-base">
-                                <span>⏱️</span>
-                                <span>Depuis <strong>Gare d'Austerlitz</strong> : 25 minutes</span>
-                            </p>
-                            <p class="flex items-start gap-2 text-sm md:text-base">
-                                <span>⏱️</span>
-                                <span>Depuis <strong>Versailles</strong> : 20 minutes</span>
-                            </p>
+                                <span><strong>15 km de la gare</strong> (17 min en voiture)</span>
+                            </p>                            
                         </div>
                     </div>
                 </div>
@@ -310,9 +313,9 @@
                 <div class="grid grid-cols-1 md:grid-cols-1 gap-6">
                    
                     <div class="bg-white p-4 rounded-2xl shadow-md mx-auto">
-                        <h4 class="text-lg font-bold text-blue-600 mb-4 text-center">Plan du parking & restauration</h4>
-                        <a href="images/parking-gymnase-restauration.png" target="_blank" class="block">
-                            <img src="images/parking-gymnase-restauration.png"
+                        <h4 class="text-lg font-bold text-blue-600 mb-4 text-center">Plan du parking & Exposants et Buvette</h4>
+                        <a href="images/parking.png" target="_blank" class="block">
+                            <img src="images/parking.png"
                                  alt="Plan du parking et de la restauration"
                                  class="w-full rounded-lg hover:opacity-90 transition cursor-zoom-in">
                         </a>
@@ -335,15 +338,23 @@
                 </div>
 
                 <div class="bg-gray-50 p-4 md:p-8 rounded-xl md:rounded-2xl">
-                    <h4 class="text-lg md:text-xl font-bold mb-4 md:mb-6">Hôtels à proximité</h4>
+                    <h4 class="text-lg md:text-xl font-bold mb-4 md:mb-6">Hébergements à proximité</h4>
 
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-3">
                         <div class="space-y-3">
                             <div class="flex items-start">
                                 <span class="text-blue-600 font-bold mr-2 md:mr-3">→</span>
                                 <span class="text-sm md:text-base">
-                                    <a href="https://www.hotel-bb.com/fr/hotel/saint-michel-sur-orge" target="_blank" rel="noopener" class="text-blue-600 hover:underline">
-                                        <strong>B&B Hotel Saint-Michel-sur-Orge</strong>
+                                    <a href="https://www.camping-namaste.com/fr/" target="_blank" rel="noopener" class="text-blue-600 hover:underline">
+                                        <strong>Camping & Lodges Namasté</strong>
+                                    </a>
+                                </span>
+                            </div>
+                            <div class="flex items-start">
+                                <span class="text-blue-600 font-bold mr-2 md:mr-3">→</span>
+                                <span class="text-sm md:text-base">
+                                    <a href="https://tourisme.hautstolosans.fr/fr/diffusio/hebergements-locatifs/gite-la-grange-launac_TFOHLOMID031V510F1A" target="_blank" rel="noopener" class="text-blue-600 hover:underline">
+                                        <strong>Gîte La Grange à Launac</strong>
                                     </a>
                                 </span>
                             </div>
@@ -351,58 +362,12 @@
                             <div class="flex items-start">
                                 <span class="text-blue-600 font-bold mr-2 md:mr-3">→</span>
                                 <span class="text-sm md:text-base">
-                                    <a href="https://www.hotel-bb.com/fr/hotel/bretigny-sur-orge" target="_blank" rel="noopener" class="text-blue-600 hover:underline">
-                                        <strong>B&B Hotel Brétigny-sur-Orge</strong>
+                                    <a href="https://tourisme.hautstolosans.fr/fr/dormir/gites-et-meubles?wei0%5Bid0%5D=%7CLiGitesV01%7CDefaut%7C21%7C2%7CMoGitesV01%7C%7C%7C%7C%7CFA" target="_blank" rel="noopener" class="text-blue-600 hover:underline">
+                                        <strong>Office du tourisme des Hauts-Tolosans</strong>
                                     </a>
                                 </span>
                             </div>
 
-                            <div class="flex items-start">
-                                <span class="text-blue-600 font-bold mr-2 md:mr-3">→</span>
-                                <span class="text-sm md:text-base">
-                                    <a href="https://www.choicehotels.com/fr-fr/france/linas/comfort-inn-hotels/fr525" target="_blank" rel="noopener" class="text-blue-600 hover:underline">
-                                        <strong>Comfort Hotel Linas Montlhéry</strong>
-                                    </a>
-                                </span>
-                            </div>
-
-                            <div class="flex items-start">
-                                <span class="text-blue-600 font-bold mr-2 md:mr-3">→</span>
-                                <span class="text-sm md:text-base">
-                                    <a href="https://www.airbnb.fr/s/Saint~Michel~sur~Orge/homes?checkin=2026-02-20&checkout=2026-02-22" target="_blank" rel="noopener" class="text-blue-600 hover:underline">
-                                        <strong>Airbnb Saint-Michel-sur-Orge</strong>
-                                    </a>
-                                </span>
-                            </div>
-                        </div>
-
-                        <div class="space-y-3">
-                            <div class="flex items-start">
-                                <span class="text-blue-600 font-bold mr-2 md:mr-3">→</span>
-                                <span class="text-sm md:text-base">
-                                    <a href="https://all.accor.com/hotel/A345/index.fr.shtml" target="_blank" rel="noopener" class="text-blue-600 hover:underline">
-                                        <strong>Ibis Montlhéry</strong>
-                                    </a>
-                                </span>
-                            </div>
-
-                            <div class="flex items-start">
-                                <span class="text-blue-600 font-bold mr-2 md:mr-3">→</span>
-                                <span class="text-sm md:text-base">
-                                    <a href="https://www.residencecarouge.fr/fr/index.php" target="_blank" rel="noopener" class="text-blue-600 hover:underline">
-                                        <strong>Résidence Hôtelière Carouge</strong>
-                                    </a>
-                                </span>
-                            </div>
-
-                            <div class="flex items-start">
-                                <span class="text-blue-600 font-bold mr-2 md:mr-3">→</span>
-                                <span class="text-sm md:text-base">
-                                    <a href="https://www.booking.com/searchresults.fr.html?ss=Gymnase+des+Mares+Yvon&ssne=Saint-Michel-sur-Orge&ssne_untouched=Saint-Michel-sur-Orge&dest_id=ChIJDdi97kLZ5UcR52Xs27LD1X4&dest_type=latlong&latitude=48.6272069&longitude=2.3271593&checkin=2026-02-20&checkout=2026-02-22&group_adults=1&no_rooms=1&group_children=0" target="_blank" rel="noopener" class="text-blue-600 hover:underline">
-                                        <strong>Tous les hébergements sur Booking.com</strong>
-                                    </a>
-                                </span>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -426,11 +391,11 @@
                     <ul class="space-y-2 md:space-y-3">
                         <li class="flex items-start">
                             <span class="text-blue-600 font-bold mr-2 md:mr-3">→</span>
-                            <span class="text-sm md:text-base"><strong class="text-blue-600">Buvette :</strong> Boissons, snacks salés (frites, croques-monsieur, paninis) et sucrés (crêpes, gâteaux, ...), sandwichs disponibles durant tout le week-end</span>
+                            <span class="text-sm md:text-base"><strong class="text-blue-600">Buvette :</strong> Boissons, snacks salés et sucrés (crêpes, gâteaux, ...),</span>
                         </li>
                         <li class="flex items-start">
                             <span class="text-blue-600 font-bold mr-2 md:mr-3">→</span>
-                            <span class="text-sm md:text-base"><strong class="text-blue-600">Repas :</strong> Plateaux repas chauds ou froids midi et soir (sauf dimanche soir : formules sandwichs uniquement) sur pré-réservation uniquement</span>
+                            <span class="text-sm md:text-base"><strong class="text-blue-600">Repas :</strong> Plateaux repas chauds sur pré-réservation uniquement</span>
                         </li>
                     </ul>
                 </div>
@@ -451,47 +416,6 @@
                     </div>
                 </div>
 
-                <div class="bg-gray-100 p-4 md:p-8 rounded-xl md:rounded-2xl">
-                    <h4 class="text-lg md:text-xl font-bold mb-3 md:mb-4">Restaurants à proximité (moins de 15 min)</h4>
-                    <ul class="space-y-2 md:space-y-3">
-                        <li class="flex items-start">
-                            <span class="text-blue-600 font-bold mr-2 md:mr-3">→</span>
-                            <span class="text-sm md:text-base">
-                                <a href="https://www.delarte.fr/store-finder/150001" target="_blank" rel="noopener" class="text-blue-600 hover:underline">
-                                    <strong>Del Arte</strong>
-                                </a> - Restaurant italien (le plus proche)
-                            </span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-blue-600 font-bold mr-2 md:mr-3">→</span>
-                            <span class="text-sm md:text-base">
-                                <a href="https://bretigny.aushopping.com/restaurants" target="_blank" rel="noopener" class="text-blue-600 hover:underline">
-                                    <strong>Centre commercial Aushopping Brétigny</strong>
-                                </a> - Restaurants variés
-                            </span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-blue-600 font-bold mr-2 md:mr-3">→</span>
-                            <span class="text-sm md:text-base">
-                                <a href="https://www.aubureau.fr/restaurant-brasserie/au-bureau-fleury-merogis" target="_blank" rel="noopener" class="text-blue-600 hover:underline">
-                                    <strong>Au Bureau Fleury-Mérogis</strong>
-                                </a>
-                            </span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-blue-600 font-bold mr-2 md:mr-3">→</span>
-                            <span class="text-sm md:text-base">
-                                <a href="https://www.ausoleilitalien.fr/" target="_blank" rel="noopener" class="text-blue-600 hover:underline">
-                                    <strong>Au Soleil Italien</strong>
-                                </a>
-                            </span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-blue-600 font-bold mr-2 md:mr-3">→</span>
-                            <span class="text-gray-600 italic text-sm md:text-base">Liste mise à jour régulièrement</span>
-                        </li>
-                    </ul>
-                </div>
             </div>
         </section>
 
@@ -517,8 +441,16 @@
                             <li class="flex items-start">
                                 <span class="text-blue-600 font-bold mr-2 md:mr-3">→</span>
                                 <span class="text-sm md:text-base">
-                                    <a href="PATINAGE-DE-VITESSE-Reglement-particulier-2025-2026.pdf" target="_blank" class="text-blue-600 hover:underline font-medium">
-                                        📄 Règlement particulier Patinage de Vitesse (PDF)
+                                    <a href="PATINAGE-DE-VITESSE-Reglement-Sportif-Dispositions-particulieres-25-26.pdf" target="_blank" class="text-blue-600 hover:underline font-medium">
+                                        📄 Règlement sportif dispositions particulières 2025-2026 (PDF)
+                                    </a>
+                                </span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-blue-600 font-bold mr-2 md:mr-3">→</span>
+                                <span class="text-sm md:text-base">
+                                    <a href="PATINAGE-DE-VITESSE-Reglement-particulier-des-competitions-25-26.pdf" target="_blank" class="text-blue-600 hover:underline font-medium">
+                                        📄 Règlement particulier des compétitions Patinage de Vitesse 2025-2026 (PDF)
                                     </a>
                                 </span>
                             </li>
@@ -534,10 +466,6 @@
                             </li>
                             <li class="flex items-start">
                                 <span class="text-blue-600 font-bold mr-2 md:mr-3">→</span>
-                                <span class="text-sm md:text-base">Gradins disponibles</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-blue-600 font-bold mr-2 md:mr-3">→</span>
                                 <span class="text-sm md:text-base">Accessible PMR</span>
                             </li>
                         </ul>
@@ -550,8 +478,8 @@
                                 <span class="text-blue-600 font-bold mr-2 md:mr-3">→</span>
                                 <span class="text-sm md:text-base">
                                     <strong class="text-blue-600">Email :</strong>
-                                    <a href="mailto:organisation.franceindoor2026@gmail.com" class="text-blue-600 hover:underline break-all">
-                                        organisation.franceindoor2026@gmail.com
+                                    <a href="mailto:rollerskatinglaunacais@gmail.com" class="text-blue-600 hover:underline break-all">
+                                        rollerskatinglaunacais@gmail.com
                                     </a>
                                 </span>
                             </li>
